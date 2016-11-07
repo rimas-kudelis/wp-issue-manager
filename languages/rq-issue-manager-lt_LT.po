@@ -1,0 +1,242 @@
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-11-07 14:15+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 "
+"&&(n%100<10||n%100 >= 20)? 1 : 2)\n"
+"X-Generator: Loco - https://localise.biz/\n"
+"Project-Id-Version: Periodic Downloadable Issue Manager\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-07 14:12+0000\n"
+"Last-Translator: zurnalai <rimas@kudelis.lt>\n"
+"Language-Team: Lithuanian\n"
+"Language: lt-LT"
+
+#: periodic-downloadable-issue-manager.php:138
+msgctxt "Menu Item Name"
+msgid "Add New Issue"
+msgstr "Kurti naują numerį"
+
+#: periodic-downloadable-issue-manager.php:69
+msgid "Issue Number"
+msgstr "Tiražo numeris"
+
+#: periodic-downloadable-issue-manager.php:74
+msgid "Issue Date"
+msgstr "Tiražo data"
+
+#: periodic-downloadable-issue-manager.php:79
+msgid "Issue PDF"
+msgstr "Leidinio PDF failas"
+
+#: periodic-downloadable-issue-manager.php:91
+msgctxt "Taxonomy General Name"
+msgid "Journals"
+msgstr "Žurnalai"
+
+#: periodic-downloadable-issue-manager.php:92
+msgctxt "Taxonomy Singular Name"
+msgid "Journal"
+msgstr "Žurnalas"
+
+#: periodic-downloadable-issue-manager.php:93
+#: periodic-downloadable-issue-manager.php:132
+msgid "Journals"
+msgstr "Žurnalai"
+
+#: periodic-downloadable-issue-manager.php:94
+msgid "All Journals"
+msgstr "Visi žurnalai"
+
+#: periodic-downloadable-issue-manager.php:95
+msgid "Parent Journal"
+msgstr "Tėvinis žurnalas"
+
+#: periodic-downloadable-issue-manager.php:96
+msgid "Parent Journal:"
+msgstr "Tėvinis žurnalas:"
+
+#: periodic-downloadable-issue-manager.php:97
+msgid "New Journal Name"
+msgstr "Naujo žurnalo pavadinimas"
+
+#: periodic-downloadable-issue-manager.php:98
+msgid "Add New Journal"
+msgstr "Kurti naują žurnalą"
+
+#: periodic-downloadable-issue-manager.php:99
+msgid "Edit Journal"
+msgstr "Taisyti žurnalą"
+
+#: periodic-downloadable-issue-manager.php:100
+msgid "Update Journal"
+msgstr "Atnaujinti žurnalą"
+
+#: periodic-downloadable-issue-manager.php:101
+msgid "View Journal"
+msgstr "Peržiūrėti žurnalą"
+
+#: periodic-downloadable-issue-manager.php:102
+msgid "Separate journals with commas"
+msgstr "Žurnalų pavadinimus atskirkite kableliais"
+
+#: periodic-downloadable-issue-manager.php:103
+msgid "Add or remove journals"
+msgstr "Kurti ar šalinti žurnalus"
+
+#: periodic-downloadable-issue-manager.php:104
+msgid "Choose from the most used"
+msgstr "Pasirinkite iš paskiausiai naudotų"
+
+#: periodic-downloadable-issue-manager.php:105
+msgid "Popular Journals"
+msgstr "Populiarūs žurnalai"
+
+#: periodic-downloadable-issue-manager.php:106
+msgid "Search Journals"
+msgstr "Ieškoti žurnalo"
+
+#: periodic-downloadable-issue-manager.php:107
+msgid "Not Found"
+msgstr "Nerasta"
+
+#: periodic-downloadable-issue-manager.php:108
+msgid "No journals"
+msgstr "Žurnalų nėra"
+
+#: periodic-downloadable-issue-manager.php:109
+msgid "Journal list"
+msgstr "Žurnalų sąrašas"
+
+#: periodic-downloadable-issue-manager.php:110
+msgid "Journal list navigation"
+msgstr "Žurnalų sąrašo navigacija"
+
+#: periodic-downloadable-issue-manager.php:130
+msgctxt "Post Type General Name"
+msgid "Issues"
+msgstr "Numeriai"
+
+#: periodic-downloadable-issue-manager.php:131
+msgctxt "Post Type Singular Name"
+msgid "Issue"
+msgstr "Numeris"
+
+#: periodic-downloadable-issue-manager.php:133
+#: periodic-downloadable-issue-manager.php:157
+msgid "Issue"
+msgstr "Žurnalo numeris"
+
+#: periodic-downloadable-issue-manager.php:134
+msgid "Issue Archives"
+msgstr "Žurnalų numerių archyvas"
+
+#: periodic-downloadable-issue-manager.php:135
+msgid "Parent Issue:"
+msgstr "Tėvinis numeris:"
+
+#: periodic-downloadable-issue-manager.php:136
+msgid "All Issues"
+msgstr "Visi žurnalų numeriai"
+
+#: periodic-downloadable-issue-manager.php:137
+msgid "Add New Issue"
+msgstr "Naujas žurnalo numeris"
+
+#: periodic-downloadable-issue-manager.php:139
+msgid "New Issue"
+msgstr "Naujas numeris"
+
+#: periodic-downloadable-issue-manager.php:140
+msgid "Edit Issue"
+msgstr "Taisyti numerį"
+
+#: periodic-downloadable-issue-manager.php:141
+msgid "Update Issue"
+msgstr "Atnaujinti numerį"
+
+#: periodic-downloadable-issue-manager.php:142
+msgid "View Issue"
+msgstr "Peržiūrėti numerį"
+
+#: periodic-downloadable-issue-manager.php:143
+msgid "Search Issues"
+msgstr "Ieškoti numerių"
+
+#: periodic-downloadable-issue-manager.php:144
+msgid "Not found"
+msgstr "Nerasta"
+
+#: periodic-downloadable-issue-manager.php:145
+msgid "Not found in Trash"
+msgstr "Šiukšlinėje nerasta"
+
+#: periodic-downloadable-issue-manager.php:146
+msgid "Cover Image"
+msgstr "Viršelio paveikslas"
+
+#: periodic-downloadable-issue-manager.php:147
+msgid "Set cover image"
+msgstr "Nustatyti viršelio paveikslą"
+
+#: periodic-downloadable-issue-manager.php:148
+msgid "Remove cover image"
+msgstr "Šalinti viršelio paveikslą"
+
+#: periodic-downloadable-issue-manager.php:149
+msgid "Use as cover image"
+msgstr "Naudoti kaip viršelio paveikslą"
+
+#: periodic-downloadable-issue-manager.php:150
+msgid "Insert into issue"
+msgstr "Įterpti į numerį"
+
+#: periodic-downloadable-issue-manager.php:151
+msgid "Uploaded to this issue"
+msgstr "Įkelti į šį numerį"
+
+#: periodic-downloadable-issue-manager.php:152
+msgid "Issue list"
+msgstr "Žurnalų numerių sąrašas"
+
+#: periodic-downloadable-issue-manager.php:153
+msgid "Issue list navigation"
+msgstr "Žurnalų numerių sąrašo navigacija"
+
+#: periodic-downloadable-issue-manager.php:154
+msgid "Filter issue list"
+msgstr "Filtruoti žurnalų numerių sąrašą"
+
+#: periodic-downloadable-issue-manager.php:158
+msgid "Periodic downloadable publication"
+msgstr "Periodinis parsisiųsti leidžiamas leidinys"
+
+#: periodic-downloadable-issue-manager.php:192
+msgid "Issue Specifics"
+msgstr "Numerio ypatybės"
+
+#: periodic-downloadable-issue-manager.php:221
+msgid "Upload"
+msgstr "Įkelti"
+
+#. Name of the plugin
+msgid "Periodic Downloadable Issue Manager"
+msgstr "Periodinių leidinių tvarkytuvė"
+
+#. Description of the plugin
+msgid ""
+"Publish your journal, newspaper or any other periodic publication in PDF "
+"format."
+msgstr ""
+"Talpinkite savo žurnalus, laikraščius ar kitus periodinius leidinius PDF "
+"formatu."
+
+#. Author of the plugin
+msgid "Rimas Kudelis"
+msgstr "Rimas Kudelis"
+
+#. Author URI of the plugin
+msgid "https://rimas.kudelis.lt/"
+msgstr "https://rimas.kudelis.lt/"
