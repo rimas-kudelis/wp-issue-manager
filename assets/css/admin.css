@@ -31,7 +31,7 @@
 }
 .issue-article-author, .issue-article-title {
     width: 100%;
-    width: calc(100% - 78px);
+    width: calc(100% - 200px);
 }
 .issue-article-title {
     width: calc(100% - 27px);
@@ -55,4 +55,8 @@
 }
 .issue-del-article:hover {
     background-position: 0 0;
+}
+.issue-article-group-title {
+    float: right;
+    width: 100px;
 }

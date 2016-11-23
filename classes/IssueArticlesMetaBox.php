@@ -69,6 +69,10 @@ if (!class_exists('RQ\IssueArticlesMetaBox')) {
 
                 $article['title'] = (string)$article_data['title'];
 
+                if (isset($article_data['group_title'])) {
+                    $article['group_title'] = ($article_data['group_title'] === '1');
+                }
+
                 if (isset($article_data['author'])) {
                     $article['author'] = (string)$article_data['author'];
                 }
@@ -123,6 +127,7 @@ if (!class_exists('RQ\IssueArticlesMetaBox')) {
         protected static function get_article_row($key, $num = null, array $article = array()) {
 
             $keyArticle = ($num === null ? $key : "{$key}[{$num}]");
+            $groupTitle = isset($article['group_title']) && $article['group_title'] === true;
 
             $html = '<li class="issue-article">';
             $html .= sprintf(
@@ -133,6 +138,12 @@ if (!class_exists('RQ\IssueArticlesMetaBox')) {
             $html .= sprintf(
                 '<a href="javascript:void(0);" class="issue-del-article">%s</a>',
                 esc_html(__('Delete Article', self::TEXTDOMAIN))
+            );
+            $html .= sprintf(
+                '<label class="issue-article-group-title">%3$s <input type="checkbox" name="%1$s[group_title]" value="1" %2$s /></label>',
+                $keyArticle,
+                $groupTitle ? 'checked' : '',
+                esc_html(__('Group title', self::TEXTDOMAIN))
             );
             $html .= sprintf(
                 '<input class="issue-article-author" type="text" id="%1$s[author]" name="%1$s[author]" value="%2$s" placeholder="%3$s">',
