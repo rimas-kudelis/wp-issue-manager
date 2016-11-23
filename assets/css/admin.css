@@ -1,0 +1,58 @@
+
+.issue-article-list li {
+    /*height: 1.9em;*/
+    line-height: 1.4em;
+}
+.ui-state-highlight {
+    height: 1.9em;
+    line-height: 1.4em;
+}
+.issue-article-order {
+    background: none repeat scroll 0 0 #eeeeee;
+    border: 1px solid #dddddd;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07) inset;
+    color: #333333;
+    display: inline-block;
+    /*float: left;*/
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: inherit;
+    line-height: 15px;
+    margin: 1px;
+    padding: 3px 5px;
+    text-align: right;
+    width: 37px;
+}
+.issue-article-order:hover {
+    cursor: pointer;
+}
+.ui-sortable-helper .issue-article-order:hover {
+    cursor: move;
+}
+.issue-article-author, .issue-article-title {
+    width: 100%;
+    width: calc(100% - 78px);
+}
+.issue-article-title {
+    width: calc(100% - 27px);
+}
+.issue-article-url {
+    width: 50%;
+    width: calc(100% - 128px);
+}
+.issue-article-url-button {
+    width: 100px;
+}
+.issue-del-article {
+    background: url("../images/icon-trash.png") no-repeat scroll -20px 0 rgba(0, 0, 0, 0);
+    /*display: inline-block;*/
+    float: right;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 5px;
+    text-indent: -5000px;
+    width: 20px;
+}
+.issue-del-article:hover {
+    background-position: 0 0;
+}
