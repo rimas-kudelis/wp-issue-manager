@@ -140,12 +140,6 @@ if (!class_exists('RQ\IssueArticlesMetaBox')) {
                 esc_html(__('Delete Article', self::TEXTDOMAIN))
             );
             $html .= sprintf(
-                '<label class="issue-article-group-title">%3$s <input type="checkbox" name="%1$s[group_title]" value="1" %2$s /></label>',
-                $keyArticle,
-                $groupTitle ? 'checked' : '',
-                esc_html(__('Group title', self::TEXTDOMAIN))
-            );
-            $html .= sprintf(
                 '<input class="issue-article-author" type="text" id="%1$s[author]" name="%1$s[author]" value="%2$s" placeholder="%3$s">',
                 $keyArticle,
                 (isset($article['author']) ? esc_attr($article['author']) : ''),
@@ -156,6 +150,12 @@ if (!class_exists('RQ\IssueArticlesMetaBox')) {
                 $keyArticle,
                 (isset($article['title']) ? esc_attr($article['title']) : ''),
                 esc_attr(__('Article title', self::TEXTDOMAIN))
+            );
+            $html .= sprintf(
+                '<label class="issue-article-group-title">%3$s <input type="checkbox" name="%1$s[group_title]" value="1" %2$s /></label>',
+                $keyArticle,
+                $groupTitle ? 'checked' : '',
+                esc_html(__('Group title', self::TEXTDOMAIN))
             );
             $html .= sprintf(
                 '<input class="issue-article-url" id="%1$s[url]" name="%1$s[url]" type="text" value="%2$s" placeholder="%3$s"><input class="button issue-media-upload-button issue-article-url-button" id="%1$s[url]_button" name="%1$s[url]_button" type="button" value="%4$s" />',

@@ -104,7 +104,7 @@ if (!class_exists('RQ\IssueSpecificsMetaBox')) {
             $output = '';
             $fields = $this->meta_box_fields;
             foreach ($fields as $field) {
-                $label = '<label for="' . $field['id'] . '">' . esc_html(__($field['label'], self::TEXTDOMAIN)) . '</label>';
+                $label = '<label for="' . $field['id'] . '">' . esc_html($field['label']) . '</label>';
                 $db_value = get_post_meta($post_id, $field['id'], true);
                 switch ($field['type']) {
                     case 'media':
