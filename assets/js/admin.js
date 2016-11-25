@@ -49,6 +49,9 @@ jQuery(document).ready(function ($) {
                 $('.issue-article-title', element)
                     .attr('id', newId + '[title]')
                     .attr('name', newId + '[title]');
+                $('.issue-article-group-title input', element)
+                    .attr('id', newId + '[group_title]')
+                    .attr('name', newId + '[group_title]');
                 $('.issue-article-url', element)
                     .attr('id', newId + '[url]')
                     .attr('name', newId + '[url]');

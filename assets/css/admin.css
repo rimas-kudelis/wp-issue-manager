@@ -43,7 +43,6 @@
 }
 .issue-del-article {
     background: url("../images/icon-trash.png") no-repeat scroll -20px 0 rgba(0, 0, 0, 0);
-    /*display: inline-block;*/
     float: right;
     height: 20px;
     line-height: 20px;
