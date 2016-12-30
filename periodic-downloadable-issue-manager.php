@@ -34,5 +34,6 @@ if (!defined('WPINC')) {
 require_once 'classes/IssueManager.php';
 require_once 'classes/IssueArticlesMetaBox.php';
 require_once 'classes/IssueSpecificsMetaBox.php';
+require_once 'classes/Helper.php';
 
-new \RQ\IssueManager;
+new \RQ\IssueManager\IssueManager;

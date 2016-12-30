@@ -17,9 +17,9 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 Copyright 2016 Rimas Kudelis <rq@akl.lt>.
 */
 
-namespace RQ;
+namespace RQ\IssueManager;
 
-if (!class_exists('RQ\IssueSpecificsMetaBox')) {
+if (!class_exists('RQ\IssueManager\IssueSpecificsMetaBox')) {
 
     class IssueSpecificsMetaBox {
 
@@ -44,7 +44,7 @@ if (!class_exists('RQ\IssueSpecificsMetaBox')) {
                 array(
                     'id' => 'issue_date',
                     'label' => __('Issue Date', self::TEXTDOMAIN),
-                    'type' => 'datetime',
+                    'type' => 'date_inexact',
                 ),
                 array(
                     'id' => 'issue_pdf',
@@ -61,7 +61,7 @@ if (!class_exists('RQ\IssueSpecificsMetaBox')) {
          */
         public function add_meta_box_callback($post) {
             wp_nonce_field('issue_specifics_data', 'issue_specifics_nonce');
-            echo $this->generate_fields($post->ID);
+            echo Helper::generate_fields($post->ID, $this->meta_box_fields);
         }
 
         /**
@@ -80,56 +80,7 @@ if (!class_exists('RQ\IssueSpecificsMetaBox')) {
                 return;
             }
 
-            foreach ($this->meta_box_fields as $field) {
-                if (isset($_POST[$field['id']])) {
-                    switch ($field['type']) {
-                        case 'email':
-                            $_POST[$field['id']] = sanitize_email($_POST[$field['id']]);
-                            break;
-                        case 'text':
-                            $_POST[$field['id']] = sanitize_text_field($_POST[$field['id']]);
-                            break;
-                    }
-                    update_post_meta($post_id, $field['id'], $_POST[$field['id']]);
-                } else if ($field['type'] === 'checkbox') {
-                    update_post_meta($post_id, $field['id'], '0');
-                }
-            }
+            Helper::save_post_meta($post_id, $this->meta_box_fields);
         }
-
-        /**
-         * Generates the fields HTML for a meta box.
-         */
-        protected function generate_fields($post_id) {
-            $output = '';
-            $fields = $this->meta_box_fields;
-            foreach ($fields as $field) {
-                $label = '<label for="' . $field['id'] . '">' . esc_html($field['label']) . '</label>';
-                $db_value = get_post_meta($post_id, $field['id'], true);
-                switch ($field['type']) {
-                    case 'media':
-                        $input = sprintf(
-                            '<input id="%s" name="%s" type="text" value="%s"> <input class="button issue-media-upload-button" id="%s_button" name="%s_button" type="button" value="' . esc_html(__('Upload', self::TEXTDOMAIN)) . '" />',
-                            $field['id'],
-                            $field['id'],
-                            $db_value,
-                            $field['id'],
-                            $field['id']
-                        );
-                        break;
-                    default:
-                        $input = sprintf(
-                            '<input id="%s" name="%s" type="%s" value="%s">',
-                            $field['id'],
-                            $field['id'],
-                            $field['type'],
-                            $db_value
-                        );
-                }
-                $output .= '<p>' . $label . '<br>' . $input . '</p>';
-            }
-            return $output;
-        }
-
     }
 }

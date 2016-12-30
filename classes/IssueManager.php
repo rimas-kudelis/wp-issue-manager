@@ -17,9 +17,9 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 Copyright 2016 Rimas Kudelis <rq@akl.lt>.
 */
 
-namespace RQ;
+namespace RQ\IssueManager;
 
-if (!class_exists('RQ\IssueManager')) {
+if (!class_exists('RQ\IssueManager\IssueManager')) {
 
     class IssueManager {
 
